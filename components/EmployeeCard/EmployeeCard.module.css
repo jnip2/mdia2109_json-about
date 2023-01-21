@@ -1,0 +1,63 @@
+.hoveranimation {
+    transition: all 0.2s ease-in;
+}
+
+.hoveranimation:hover {
+    transform: scale(1.05);
+}
+
+.employeecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--card-color);
+    border-radius: 25px;
+    padding: 25px;
+    height: 380px;
+    width: 300px;
+}
+
+.employeecard>.portrait {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin: 25px;
+}
+
+.name {
+    color: var(--main-text-color);
+}
+
+.role {
+    color: var(--secondary-text-color)
+}
+
+.bio {
+    width: 270px;
+    color: var(--body-text-color);
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+.fadein__1000ms {
+    animation: fadein__1000ms ease-in 1500ms;
+}
+
+@keyframes fadein__1000ms {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

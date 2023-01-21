@@ -1,0 +1,30 @@
+.programs__header {
+  width: 350px;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 45px;
+  background-color: var(--home-header-bg);
+  margin: 20px;
+  border-radius: 55px;
+}
+
+.programs__header__text {
+  margin: 0px;
+  font-weight: bold;
+  font-family: 'Cookie', cursive;
+  font-size: 45px;
+}
+
+.fadein__750ms {
+  animation: fadein__750ms ease-in 750ms;
+}
+
+@keyframes fadein__750ms {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
