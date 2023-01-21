@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Alicia",
+        "role": "Web developer",
+        "yearsWorked": "5",
+        "bio": "Hey there! My name is Alicia and I am a web developer. On the weekends, you can probably find me at a coffee shop or at the gym."
+    },
+    {
+        "name": "Beatrice",
+        "role": "Web developer",
+        "yearsWorked": "2",
+        "bio": "Hi everyone, Beatrice here. I've been a web developer for 2 years and I love my pet cat!"
+    },
+    {
+        "name": "Chloe",
+        "role": "UI Designer",
+        "yearsWorked": "4",
+        "bio": "My name is Chloe and I am a UI designer. I am passionate about designing clean, streamlined application interfaces. Nice to meet you!"
+    }
+]
