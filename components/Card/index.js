@@ -1,17 +1,21 @@
+import styles from './Card.module.css'
+
 export default function Card({
+    department="none",
     degree="none",
-    colour="purple",
+    colour="slategray",
     font="0",
-    image="icon/personTwo.png"
+    image="icon/default.png",
+    name=""
 }) {
     return(
-        <div style={{backgroundColor: colour, fontSize: font}}>
+        <div className={`${styles.card} ${styles.hoveranimation} ${styles.fadein__1500ms}`} style={{backgroundColor: 'var(--card-color)', fontSize: font}}>
             {
-                colour === "red" ?  <img src={'icon/person.png'} width='50'></img> :
-                colour === "blue" ? <img src={'icon/personThree.png'} width='50'></img> :
-                                    <img src={image} width='50'></img>
+                department.toLowerCase() === "business" ?  <img src={'icon/business.png'} className={`${styles.icon}`}></img> :
+                department.toLowerCase() === "computing" ?   <img src={'icon/computing.webp'} className={styles.icon}></img> :
+                                         <img src={image} width='50'></img>
             }
-            {degree}
+            <h2 className={styles.degree}>{degree}</h2>
         </div>
     )
 }
